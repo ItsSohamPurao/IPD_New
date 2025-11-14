@@ -1,0 +1,128 @@
+{
+    "algorithm_name": "RFECV_SVM",
+    "model_scores": {
+        "0": {
+            "precision": 0.8525030197288954,
+            "recall": 0.365099436716864,
+            "f1-score": 0.5112479375427582,
+            "support": 17398.0
+        },
+        "1": {
+            "precision": 0.09161184210526316,
+            "recall": 0.5033890646181653,
+            "f1-score": 0.15501287135601474,
+            "support": 2213.0
+        },
+        "accuracy": 0.3807047065422467,
+        "macro avg": {
+            "precision": 0.4720574309170793,
+            "recall": 0.4342442506675147,
+            "f1-score": 0.33313040444938646,
+            "support": 19611.0
+        },
+        "weighted avg": {
+            "precision": 0.7666403826333318,
+            "recall": 0.3807047065422467,
+            "f1-score": 0.47104865135280044,
+            "support": 19611.0
+        }
+    },
+    "original_features": {
+        "selected_count": 33,
+        "discarded_count": 7,
+        "total_count": 40,
+        "selected": [
+            "acarbose",
+            "acetohexamide",
+            "change",
+            "chlorpropamide",
+            "diabetesMed",
+            "diag_1_grouped",
+            "discharge_disposition_id",
+            "gender",
+            "glimepiride",
+            "glimepiride-pioglitazone",
+            "glipizide",
+            "glipizide-metformin",
+            "glyburide",
+            "glyburide-metformin",
+            "insulin",
+            "metformin",
+            "metformin-pioglitazone",
+            "miglitol",
+            "nateglinide",
+            "num_lab_procedures",
+            "num_medications",
+            "num_procedures",
+            "number_diagnoses",
+            "number_emergency",
+            "number_inpatient",
+            "number_outpatient",
+            "pioglitazone",
+            "repaglinide",
+            "rosiglitazone",
+            "time_in_hospital",
+            "tolazamide",
+            "tolbutamide",
+            "troglitazone"
+        ],
+        "discarded": [
+            "admission_source_id",
+            "admission_type_id",
+            "age_encoded",
+            "citoglipton",
+            "examide",
+            "metformin-rosiglitazone",
+            "race"
+        ]
+    },
+    "encoded_features": {
+        "selected_count": 33,
+        "discarded_count": 7,
+        "total_count": 40,
+        "selected": [
+            "acarbose",
+            "acetohexamide",
+            "change",
+            "chlorpropamide",
+            "diabetesMed",
+            "diag_1_grouped",
+            "discharge_disposition_id",
+            "gender",
+            "glimepiride",
+            "glimepiride-pioglitazone",
+            "glipizide",
+            "glipizide-metformin",
+            "glyburide",
+            "glyburide-metformin",
+            "insulin",
+            "metformin",
+            "metformin-pioglitazone",
+            "miglitol",
+            "nateglinide",
+            "num_lab_procedures",
+            "num_medications",
+            "num_procedures",
+            "number_diagnoses",
+            "number_emergency",
+            "number_inpatient",
+            "number_outpatient",
+            "pioglitazone",
+            "repaglinide",
+            "rosiglitazone",
+            "time_in_hospital",
+            "tolazamide",
+            "tolbutamide",
+            "troglitazone"
+        ],
+        "discarded": [
+            "admission_source_id",
+            "admission_type_id",
+            "age_encoded",
+            "citoglipton",
+            "examide",
+            "metformin-rosiglitazone",
+            "race"
+        ]
+    }
+}
