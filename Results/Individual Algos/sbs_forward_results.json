@@ -2,34 +2,34 @@
     "algorithm_name": "SBS_Forward",
     "model_scores": {
         "0": {
-            "precision": 0.8518160475072504,
-            "recall": 0.354523508449247,
-            "f1-score": 0.5006696700353098,
+            "precision": 0.8599015524422567,
+            "recall": 0.39159673525692607,
+            "f1-score": 0.5381304055921962,
             "support": 17398.0
         },
         "1": {
-            "precision": 0.09215844785772029,
-            "recall": 0.5151378219611388,
-            "f1-score": 0.1563464307755606,
+            "precision": 0.09437029431895962,
+            "recall": 0.49841843651152284,
+            "f1-score": 0.15869361916408892,
             "support": 2213.0
         },
-        "accuracy": 0.3726480036714089,
+        "accuracy": 0.40365101218703786,
         "macro avg": {
-            "precision": 0.47198724768248534,
-            "recall": 0.43483066520519287,
-            "f1-score": 0.3285080504054352,
+            "precision": 0.4771359233806082,
+            "recall": 0.44500758588422445,
+            "f1-score": 0.34841201237814257,
             "support": 19611.0
         },
         "weighted avg": {
-            "precision": 0.7660926133109112,
-            "recall": 0.3726480036714089,
-            "f1-score": 0.4618145719535279,
+            "precision": 0.7735153062423253,
+            "recall": 0.40365101218703786,
+            "f1-score": 0.495312925179907,
             "support": 19611.0
         }
     },
     "original_features": {
-        "selected_count": 24,
-        "discarded_count": 16,
+        "selected_count": 28,
+        "discarded_count": 12,
         "total_count": 40,
         "selected": [
             "admission_source_id",
@@ -38,6 +38,7 @@
             "diabetesMed",
             "diag_1_grouped",
             "discharge_disposition_id",
+            "examide",
             "gender",
             "glimepiride-pioglitazone",
             "glipizide-metformin",
@@ -45,7 +46,9 @@
             "glyburide-metformin",
             "metformin",
             "metformin-pioglitazone",
+            "metformin-rosiglitazone",
             "miglitol",
+            "nateglinide",
             "num_lab_procedures",
             "num_medications",
             "num_procedures",
@@ -55,7 +58,8 @@
             "number_outpatient",
             "pioglitazone",
             "race",
-            "time_in_hospital"
+            "time_in_hospital",
+            "tolazamide"
         ],
         "discarded": [
             "acarbose",
@@ -63,22 +67,18 @@
             "age_encoded",
             "change",
             "chlorpropamide",
-            "examide",
             "glimepiride",
             "glipizide",
             "insulin",
-            "metformin-rosiglitazone",
-            "nateglinide",
             "repaglinide",
             "rosiglitazone",
-            "tolazamide",
             "tolbutamide",
             "troglitazone"
         ]
     },
     "encoded_features": {
-        "selected_count": 24,
-        "discarded_count": 16,
+        "selected_count": 28,
+        "discarded_count": 12,
         "total_count": 40,
         "selected": [
             "admission_source_id",
@@ -87,6 +87,7 @@
             "diabetesMed",
             "diag_1_grouped",
             "discharge_disposition_id",
+            "examide",
             "gender",
             "glimepiride-pioglitazone",
             "glipizide-metformin",
@@ -94,7 +95,9 @@
             "glyburide-metformin",
             "metformin",
             "metformin-pioglitazone",
+            "metformin-rosiglitazone",
             "miglitol",
+            "nateglinide",
             "num_lab_procedures",
             "num_medications",
             "num_procedures",
@@ -104,7 +107,8 @@
             "number_outpatient",
             "pioglitazone",
             "race",
-            "time_in_hospital"
+            "time_in_hospital",
+            "tolazamide"
         ],
         "discarded": [
             "acarbose",
@@ -112,15 +116,11 @@
             "age_encoded",
             "change",
             "chlorpropamide",
-            "examide",
             "glimepiride",
             "glipizide",
             "insulin",
-            "metformin-rosiglitazone",
-            "nateglinide",
             "repaglinide",
             "rosiglitazone",
-            "tolazamide",
             "tolbutamide",
             "troglitazone"
         ]

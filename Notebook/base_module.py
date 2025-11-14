@@ -17,6 +17,7 @@ from sklearn.preprocessing import StandardScaler, OrdinalEncoder
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
 
+RESULTS_DIR = r'D:\ACTUAL STUDY MATERIAL\IPD\src\Results'
 
 # ========================================
 # DATA LOADING
@@ -245,12 +246,25 @@ def save_model_results(algorithm_name, selected_encoded_features, all_encoded_fe
     }
     
     results_df = pd.DataFrame([report_flat])
-    if not os.path.exists(results_csv):
-        results_df.to_csv(results_csv, index=False)
-    else:
-        results_df.to_csv(results_csv, mode='a', header=False, index=False)
     
-    print(f"✓ Appended to {results_csv}")
+    # --- MODIFICATIONS START HERE ---
+    
+    # NEW: Ensure the results directory exists
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+    
+    # NEW: Create full paths for the CSV and JSON files
+    csv_path = os.path.join(RESULTS_DIR, results_csv)
+    
+    json_filename_only = f"{algorithm_name.lower().replace(' ', '_')}_results.json"
+    json_path = os.path.join(RESULTS_DIR, json_filename_only)
+
+    # MODIFIED: Use the new 'csv_path' variable
+    if not os.path.exists(csv_path):
+        results_df.to_csv(csv_path, index=False)
+    else:
+        results_df.to_csv(csv_path, mode='a', header=False, index=False)
+    
+    print(f"✓ Appended to {csv_path}") # MODIFIED: Print the full path
 
     # JSON data
     discarded_original = sorted(list(set(all_original_features) - set(selected_original)))
@@ -275,16 +289,18 @@ def save_model_results(algorithm_name, selected_encoded_features, all_encoded_fe
         }
     }
     
-    json_filename = f"{algorithm_name.lower().replace(' ', '_')}_results.json"
-    with open(json_filename, 'w') as f:
+    # MODIFIED: Use the new 'json_path' variable
+    with open(json_path, 'w') as f:
         json.dump(json_data, f, indent=4)
     
-    print(f"✓ Saved to {json_filename}")
+    print(f"✓ Saved to {json_path}") # MODIFIED: Print the full path
+    
+    # --- MODIFICATIONS END HERE ---
+    
     print(f"\n  Original: {selected_original_count}/{total_original} features")
     print(f"  Encoded:  {selected_encoded_count}/{total_encoded} features")
     print(f"  Accuracy: {report['accuracy']:.4f}")
     print(f"  F1 (class 1): {report['1']['f1-score']:.4f}")
-
 
 # ========================================
 # STANDARD TRAINING FUNCTION

@@ -2,36 +2,37 @@
     "algorithm_name": "Chi-Squared",
     "model_scores": {
         "0": {
-            "precision": 0.9070000836330183,
+            "precision": 0.8819941444372154,
             "recall": 0.6233475112081849,
-            "f1-score": 0.738886050076648,
+            "f1-score": 0.7304505960800162,
             "support": 17398.0
         },
         "1": {
-            "precision": 0.14384635484713876,
-            "recall": 0.4975146859466787,
-            "f1-score": 0.22316813621161447,
+            "precision": 0.10416951469583048,
+            "recall": 0.34432896520560324,
+            "f1-score": 0.15994962216624686,
             "support": 2213.0
         },
-        "accuracy": 0.6091479271837235,
+        "accuracy": 0.5918617102646474,
         "macro avg": {
-            "precision": 0.5254232192400785,
-            "recall": 0.5604310985774318,
-            "f1-score": 0.4810270931441312,
+            "precision": 0.4930818295665229,
+            "recall": 0.4838382382068941,
+            "f1-score": 0.4452001091231315,
             "support": 19611.0
         },
         "weighted avg": {
-            "precision": 0.8208821293317,
-            "recall": 0.6091479271837235,
-            "f1-score": 0.6806899487364145,
+            "precision": 0.7942206547825478,
+            "recall": 0.5918617102646474,
+            "f1-score": 0.6660725095331205,
             "support": 19611.0
         }
     },
     "original_features": {
-        "selected_count": 24,
-        "discarded_count": 16,
+        "selected_count": 28,
+        "discarded_count": 12,
         "total_count": 40,
         "selected": [
+            "acetohexamide",
             "admission_source_id",
             "admission_type_id",
             "age_encoded",
@@ -41,6 +42,8 @@
             "discharge_disposition_id",
             "gender",
             "glimepiride",
+            "glimepiride-pioglitazone",
+            "insulin",
             "metformin",
             "metformin-pioglitazone",
             "num_lab_procedures",
@@ -53,34 +56,32 @@
             "pioglitazone",
             "race",
             "repaglinide",
+            "rosiglitazone",
             "time_in_hospital",
             "tolbutamide",
             "troglitazone"
         ],
         "discarded": [
             "acarbose",
-            "acetohexamide",
             "chlorpropamide",
             "citoglipton",
             "examide",
-            "glimepiride-pioglitazone",
             "glipizide",
             "glipizide-metformin",
             "glyburide",
             "glyburide-metformin",
-            "insulin",
             "metformin-rosiglitazone",
             "miglitol",
             "nateglinide",
-            "rosiglitazone",
             "tolazamide"
         ]
     },
     "encoded_features": {
-        "selected_count": 24,
-        "discarded_count": 16,
+        "selected_count": 28,
+        "discarded_count": 12,
         "total_count": 40,
         "selected": [
+            "acetohexamide",
             "admission_source_id",
             "admission_type_id",
             "age_encoded",
@@ -90,6 +91,8 @@
             "discharge_disposition_id",
             "gender",
             "glimepiride",
+            "glimepiride-pioglitazone",
+            "insulin",
             "metformin",
             "metformin-pioglitazone",
             "num_lab_procedures",
@@ -102,26 +105,23 @@
             "pioglitazone",
             "race",
             "repaglinide",
+            "rosiglitazone",
             "time_in_hospital",
             "tolbutamide",
             "troglitazone"
         ],
         "discarded": [
             "acarbose",
-            "acetohexamide",
             "chlorpropamide",
             "citoglipton",
             "examide",
-            "glimepiride-pioglitazone",
             "glipizide",
             "glipizide-metformin",
             "glyburide",
             "glyburide-metformin",
-            "insulin",
             "metformin-rosiglitazone",
             "miglitol",
             "nateglinide",
-            "rosiglitazone",
             "tolazamide"
         ]
     }

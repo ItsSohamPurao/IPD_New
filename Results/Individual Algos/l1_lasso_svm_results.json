@@ -2,37 +2,36 @@
     "algorithm_name": "L1_Lasso_SVM",
     "model_scores": {
         "0": {
-            "precision": 0.8581623550401427,
-            "recall": 0.4423496953672836,
-            "f1-score": 0.5837821436698779,
+            "precision": 0.8594608087868197,
+            "recall": 0.39579261984136105,
+            "f1-score": 0.541991341991342,
             "support": 17398.0
         },
         "1": {
-            "precision": 0.08841492060509255,
-            "recall": 0.4252146407591505,
-            "f1-score": 0.14639079029247043,
+            "precision": 0.09371497542891628,
+            "recall": 0.49118843199277,
+            "f1-score": 0.15739936287286418,
             "support": 2213.0
         },
-        "accuracy": 0.44041609300902557,
+        "accuracy": 0.4065575442353781,
         "macro avg": {
-            "precision": 0.47328863782261765,
-            "recall": 0.433782168063217,
-            "f1-score": 0.3650864669811742,
+            "precision": 0.476587892107868,
+            "recall": 0.4434905259170655,
+            "f1-score": 0.3496953524321031,
             "support": 19611.0
         },
         "weighted avg": {
-            "precision": 0.7713003351327047,
-            "recall": 0.44041609300902557,
-            "f1-score": 0.5344247898876024,
+            "precision": 0.7730503488805917,
+            "recall": 0.40655754423537804,
+            "f1-score": 0.4985921247260729,
             "support": 19611.0
         }
     },
     "original_features": {
-        "selected_count": 32,
-        "discarded_count": 8,
+        "selected_count": 28,
+        "discarded_count": 12,
         "total_count": 40,
         "selected": [
-            "acarbose",
             "admission_source_id",
             "admission_type_id",
             "age_encoded",
@@ -44,7 +43,6 @@
             "gender",
             "glimepiride",
             "glipizide",
-            "glipizide-metformin",
             "glyburide",
             "glyburide-metformin",
             "insulin",
@@ -60,28 +58,29 @@
             "number_outpatient",
             "pioglitazone",
             "race",
-            "repaglinide",
             "rosiglitazone",
-            "time_in_hospital",
-            "tolbutamide"
+            "time_in_hospital"
         ],
         "discarded": [
+            "acarbose",
             "acetohexamide",
             "citoglipton",
             "examide",
             "glimepiride-pioglitazone",
+            "glipizide-metformin",
             "metformin-pioglitazone",
             "metformin-rosiglitazone",
+            "repaglinide",
             "tolazamide",
+            "tolbutamide",
             "troglitazone"
         ]
     },
     "encoded_features": {
-        "selected_count": 32,
-        "discarded_count": 8,
+        "selected_count": 28,
+        "discarded_count": 12,
         "total_count": 40,
         "selected": [
-            "acarbose",
             "admission_source_id",
             "admission_type_id",
             "age_encoded",
@@ -93,7 +92,6 @@
             "gender",
             "glimepiride",
             "glipizide",
-            "glipizide-metformin",
             "glyburide",
             "glyburide-metformin",
             "insulin",
@@ -109,19 +107,21 @@
             "number_outpatient",
             "pioglitazone",
             "race",
-            "repaglinide",
             "rosiglitazone",
-            "time_in_hospital",
-            "tolbutamide"
+            "time_in_hospital"
         ],
         "discarded": [
+            "acarbose",
             "acetohexamide",
             "citoglipton",
             "examide",
             "glimepiride-pioglitazone",
+            "glipizide-metformin",
             "metformin-pioglitazone",
             "metformin-rosiglitazone",
+            "repaglinide",
             "tolazamide",
+            "tolbutamide",
             "troglitazone"
         ]
     }
